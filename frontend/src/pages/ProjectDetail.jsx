@@ -18,7 +18,7 @@ const ProjectDetail = () => {
       technologies: ['JavaScript', 'HTML', 'CSS', 'Monte Carlo'],
       image_url: 'https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&auto=format&fit=crop',
       github_url: 'https://github.com/freddysanchez-dev/PANEL-CONTROL-ABARCASAS_LOGISTICA',
-      live_url: 'https://dragonmanprogrammer.github.io/PANEL-CONTROL-ABARCASAS_LOGISTICA/appweb/html/prueba.html',
+      live_url: 'https://freddysanchez-dev.github.io/PANEL-CONTROL-ABARCASAS_LOGISTICA/appweb/html/prueba.html',
     },
     {
       id: 2,
