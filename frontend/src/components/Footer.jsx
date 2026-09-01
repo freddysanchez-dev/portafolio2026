@@ -11,7 +11,7 @@ const Footer = () => {
           </div>
           
           <p className="text-gray-600 dark:text-gray-400 text-sm flex items-center gap-1">
-            Hecho con <Heart className="h-4 w-4 text-red-500 fill-red-500" /> usando React, Node.js & PostgreSQL
+            Hecho con Node.js & PostgreSQL
           </p>
           
           <p className="text-gray-500 dark:text-gray-600 text-sm">

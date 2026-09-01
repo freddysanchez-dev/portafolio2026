@@ -82,7 +82,7 @@ const About = () => {
             Sobre <span className="gradient-text">Mí</span>
           </h1>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Desarrollador Full-Stack · Científico de Datos · Especialista en IA
+            Desarrollador Full-Stack · Analista de Datos · Especialista en IA
           </p>
         </motion.div>
 

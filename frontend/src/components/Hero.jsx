@@ -28,7 +28,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">
-            Especializado en desarrollo web , Análisis de Datos y Inteligencia Artificial.
+            Especializado en desarrollo web , Análisis de Datos e Inteligencia Artificial.
             Transformo ideas en productos digitales de alta calidad.
           </p>
 
