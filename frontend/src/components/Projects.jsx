@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 // Importación de la imagen local desde src/img/
 import dataLabImg from '../img/DataLABEDA.png';
-
+import Logistica from '../img/Logistica.png';
 const Projects = () => {
   // Datos estáticos de tus proyectos
   const projects = [
@@ -14,7 +14,7 @@ const Projects = () => {
       category: 'Simulación Logística',
       description: 'Sistema de simulación de eventos discretos para optimizar operaciones portuarias. Utiliza el Método de Monte Carlo para modelar llegadas, descargas y retrasos de barcazas, generando un dashboard analítico para la toma de decisiones logísticas.',
       technologies: ['JavaScript', 'HTML', 'CSS', 'Monte Carlo'],
-      image_url: 'https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&auto=format&fit=crop',
+      image_url: Logistica,
       github_url: 'https://github.com/freddysanchez-dev/PANEL-CONTROL-ABARCASAS_LOGISTICA',
       live_url: 'https://freddysanchez-dev.github.io/PANEL-CONTROL-ABARCASAS_LOGISTICA/appweb/html/prueba.html',
     },
