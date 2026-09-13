@@ -2,8 +2,11 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Importación de la imagen local desde src/img/
+import dataLabImg from '../img/DataLABEDA.png';
+
 const Projects = () => {
-  // Datos estáticos de tus proyectos (sin llamada a API)
+  // Datos estáticos de tus proyectos
   const projects = [
     {
       id: 1,
@@ -17,9 +20,9 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'PowerVital - Recomendación de Ejercicios con IA',
-      category: 'Inteligencia Artificial',
-      description: 'Plataforma web que recomienda rutinas de ejercicio personalizadas. Los clientes se registran, indican sus padecimientos y un backend en C# usa la API de OpenAI para generar una rutina segura y adaptada a sus capacidades.',
+      title: 'PowerVital - HealthTech AI: Generador Adaptativo de Rutinas Según Patologías',
+      category: 'Inteligencia Artificial & HealthTech',
+      description: 'Sistema inteligente enfocado en salud preventiva que evalúa condiciones médicas y limitaciones físicas para prescribir planes de ejercicio seguros. Integra un backend en .NET/C# con la API de OpenAI para analizar datos clínicos de los usuarios y generar planes de entrenamiento personalizados en tiempo real.',
       technologies: ['C#', '.NET', 'API OpenAI', 'JavaScript', 'HTML', 'CSS'],
       image_url: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&auto=format&fit=crop',
       github_url: 'https://github.com/freddysanchez-dev',
@@ -31,7 +34,7 @@ const Projects = () => {
       category: 'Ciencia de Datos',
       description: 'Aplicación de escritorio profesional para análisis exploratorio de datos (EDA) con interfaz gráfica moderna. Ofrece limpieza auditable, estadísticas descriptivas, detección de outliers, dashboards interactivos y gestión completa de datos.',
       technologies: ['Python', 'Pandas', 'Matplotlib', 'Tkinter', 'Seaborn'],
-      image_url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop',
+      image_url: dataLabImg,
       github_url: 'https://github.com/freddysanchez-dev/Ciencias-de-datos/tree/main/Analisis%20exploratorio%20de%20datos(EDA)/PROYECTO_FINAL_FREDDY',
       live_url: 'https://github.com/freddysanchez-dev/Ciencias-de-datos/tree/main/Analisis%20exploratorio%20de%20datos(EDA)/PROYECTO_FINAL_FREDDY',
     },

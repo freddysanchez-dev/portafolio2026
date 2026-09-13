@@ -25,10 +25,14 @@ portafolio2026/
 │ ├── context/
 │ │ └── ThemeContext.jsx # Contexto para tema oscuro/claro
 │ │
+| |
+| |___img
+| |
 │ └── pages/
-│ ├── About.jsx # Página "Sobre Mí"
-│ ├── Home.jsx # Página principal
-│ └── ProjectDetail.jsx # Detalle de proyecto
+│   ├── About.jsx # Página "Sobre Mí"
+│   ├── Home.jsx # Página principal
+│   └── ProjectDetail.jsx # Detalle de proyecto
+|  
 │
 ├── .env # Variables de entorno
 ├── App.jsx # Componente principal
