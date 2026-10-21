@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 // Importación de la imagen local desde src/img/
 import dataLabImg from '../img/DataLABEDA.png';
 import Logistica from '../img/Logistica.png';
+import TalentLens from '../img/TalentLens.png'; // <-- NUEVA IMAGEN
+
 const Projects = () => {
   // Datos estáticos de tus proyectos
   const projects = [
@@ -37,6 +39,16 @@ const Projects = () => {
       image_url: dataLabImg,
       github_url: 'https://github.com/freddysanchez-dev/Ciencias-de-datos/tree/main/Analisis%20exploratorio%20de%20datos(EDA)/PROYECTO_FINAL_FREDDY',
       live_url: 'https://github.com/freddysanchez-dev/Ciencias-de-datos/tree/main/Analisis%20exploratorio%20de%20datos(EDA)/PROYECTO_FINAL_FREDDY',
+    },
+    {
+      id: 4,
+      title: 'TalentLens Analytics - People Analytics & Retención de Talento',
+      category: 'Data Analytics & RR.HH.',
+      description: 'Análisis end-to-end de datos de RR.HH. (1,470 empleados) para identificar las causas raíz de la rotación voluntaria (16.1%) y cuantificar su impacto financiero ($6.8M). Incluye pipeline de limpieza en Python, ingeniería de características (Flight Risk Score) y un dashboard interactivo en Power BI con simulador financiero de retención que proyecta un ahorro de $1.32M.',
+      technologies: ['Python', 'Power BI', 'DAX', 'Pandas', 'Data Storytelling'],
+      image_url: TalentLens,
+      github_url: 'https://github.com/freddysanchez-dev',
+      live_url: 'https://app.powerbi.com/view?r=eyJrIjoiN2IxMDQ4NTYtYmRjNS00NTEwLTgwYjYtZTQyZjRkMDk4Yjc2IiwidCI6ImU3OTg0Y2FjLTI1NDMtNGY4OC04Zjk3LTk1MjQzMzVlNmJjNCIsImMiOjR9',
     },
   ];
 
