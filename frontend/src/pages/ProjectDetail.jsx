@@ -4,14 +4,12 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ExternalLink, Github, CheckCircle2, BrainCircuit, Target, TrendingUp } from 'lucide-react';
 
 
-// Importación de imágenes locales
-import dataLabImg from '../img/DataLABEDA.png';
-import Logistica from '../img/Logistica.png';
-import TalentLens from '../img/TalentLens.png';
+// Importación de imágenes locales (sin duplicados)
 import dataLabImg from '../img/DataLABEDA.png';
 import Logistica from '../img/Logistica.png';
 import TalentLens from '../img/TalentLens.png';
 import LoteriaML from '../img/LoteriaML.png'; 
+
 
 const ProjectDetail = () => {
   const { id } = useParams();
