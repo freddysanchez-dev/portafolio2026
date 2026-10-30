@@ -2,23 +2,14 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Importación de la imagen local desde src/img/
 import dataLabImg from '../img/DataLABEDA.png';
 import Logistica from '../img/Logistica.png';
-import TalentLens from '../img/TalentLens.png';
-import LoteriaML from '../img/LoteriaML.png'; // <-- NUEVA IMAGEN
-
+import TalentLens from '../img/TalentLens.png'; 
+import LoteriaML from '../img/LoteriaML.png'; 
 const Projects = () => {
+  // Datos estáticos de tus proyectos
   const projects = [
-    {
-      id: 5, // Nuevo ID
-      title: 'Predicción de Lotería Nacional CR - ML & Docker',
-      category: 'Machine Learning & MLOps',
-      description: 'Pipeline end-to-end de Machine Learning para la predicción de números de lotería. Incluye ingesta robusta de datos desde 4 PDFs complejos (7,226 sorteos históricos), ingeniería de características con validación temporal estricta (Walk-Forward) para eliminar fugas de datos, entrenamiento de modelos Random Forest, y despliegue como API con FastAPI y Docker en Render. El proyecto demuestra rigor analítico al presentar métricas honestas (Hit Rate Top-8 ≈ 8%) que reflejan la naturaleza aleatoria de la lotería.',
-      technologies: ['Python', 'Scikit-learn', 'FastAPI', 'Docker', 'Pandas', 'PDFPlumber', 'Render'],
-      image_url: LoteriaML,
-      github_url: 'https://github.com/freddysanchez-dev', // Reemplaza con tu repo real
-      live_url: 'https://loteria-ml-cr.onrender.com/',
-    },
     {
       id: 1,
       title: 'Abarcasas - Puerto de Nueva Orleans',
@@ -59,6 +50,31 @@ const Projects = () => {
       github_url: 'https://github.com/freddysanchez-dev',
       live_url: 'https://app.powerbi.com/view?r=eyJrIjoiN2IxMDQ4NTYtYmRjNS00NTEwLTgwYjYtZTQyZjRkMDk4Yjc2IiwidCI6ImU3OTg0Y2FjLTI1NDMtNGY4OC04Zjk3LTk1MjQzMzVlNmJjNCIsImMiOjR9',
     },
+
+   {
+  id: 5,
+  title: 'Predicción de Lotería Nacional CR - ML & Docker',
+  category: 'Machine Learning & MLOps',
+  description: 'Pipeline end-to-end de Machine Learning para la predicción de números de lotería. Incluye ingesta robusta de datos desde 4 PDFs complejos (7,226 sorteos históricos), ingeniería de características con validación temporal estricta (Walk-Forward) para eliminar fugas de datos, entrenamiento de modelos Random Forest, y despliegue como API con FastAPI y Docker en Render. El proyecto demuestra rigor analítico al presentar métricas honestas (Hit Rate Top-8 ≈ 8%) que reflejan la naturaleza aleatoria de la lotería.',
+  technologies: ['Python', 'Scikit-learn', 'FastAPI', 'Docker', 'Pandas', 'PDFPlumber', 'Render'],
+  image_url: LoteriaML,
+  github_url: 'https://github.com/freddysanchez-dev', // Reemplaza con tu repo real
+  live_url: 'https://loteria-ml-cr.onrender.com/',
+  softSkills: [
+    'Pensamiento Crítico y Rigor Analítico: Identifiqué y corregí una fuga de datos (data leakage) que inflaba las métricas al 99.8%. Implementé validación temporal (TimeSeriesSplit) y presenté resultados honestos (Hit Rate ≈ 8%), demostrando integridad profesional y conocimiento del dominio.',
+    'Adaptabilidad y Resolución de Problemas: Superé múltiples desafíos técnicos, desde incompatibilidades de Python 3.14 con Pandas, hasta la creación de un parser robusto con expresiones regulares para unificar 4 PDFs con formatos heterogéneos.',
+    'Comunicación Técnica y Transparencia: Diseñé una interfaz que comunica claramente las limitaciones del modelo, incluyendo una nota de transparencia que explica la naturaleza aleatoria de la lotería. Esto demuestra la capacidad de comunicar conceptos complejos a audiencias no técnicas.',
+    'Gestión de Proyectos y Automatización: Implementé un pipeline reproducible con Docker y Docker Compose, documenté el proceso en un README, y automaticé la ingesta y el entrenamiento, garantizando que cualquiera pueda replicar el proyecto.'
+  ],
+  methodology: [
+    'Ingesta y Limpieza de Datos: Extracción de 7,226 registros desde 4 PDFs históricos con PDFPlumber y Regex, manejando formatos dispares (fechas, números, series). Unificación en un CSV estructurado (Fecha, Sorteo, Número Ganador).',
+    'Feature Engineering y Validación Temporal: Creación de features de ventanas móviles (5, 10, 20, 50 sorteos) con shift(1) para respetar la causalidad. Implementación de TimeSeriesSplit para eliminar fugas de datos (data leakage).',
+    'Modelado y Evaluación: Entrenamiento de un modelo de clasificación multi-etiqueta (100 clasificadores Random Forest). Evaluación con métricas honestas (Hit Rate Top-8, Top-1, Log Loss) en lugar de accuracy plana, comparando contra el baseline del azar.',
+    'Despliegue y Monitoreo (MLOps): Empaquetado de la aplicación como API con FastAPI, dockerización con Docker Compose, y despliegue en Render. Documentación técnica y monitoreo continuo.'
+  ]
+},
+
+
   ];
 
   return (
