@@ -2,14 +2,23 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Importación de la imagen local desde src/img/
 import dataLabImg from '../img/DataLABEDA.png';
 import Logistica from '../img/Logistica.png';
-import TalentLens from '../img/TalentLens.png'; // <-- NUEVA IMAGEN
+import TalentLens from '../img/TalentLens.png';
+import LoteriaML from '../img/LoteriaML.png'; // <-- NUEVA IMAGEN
 
 const Projects = () => {
-  // Datos estáticos de tus proyectos
   const projects = [
+    {
+      id: 5, // Nuevo ID
+      title: 'Predicción de Lotería Nacional CR - ML & Docker',
+      category: 'Machine Learning & MLOps',
+      description: 'Pipeline end-to-end de Machine Learning para la predicción de números de lotería. Incluye ingesta robusta de datos desde 4 PDFs complejos (7,226 sorteos históricos), ingeniería de características con validación temporal estricta (Walk-Forward) para eliminar fugas de datos, entrenamiento de modelos Random Forest, y despliegue como API con FastAPI y Docker en Render. El proyecto demuestra rigor analítico al presentar métricas honestas (Hit Rate Top-8 ≈ 8%) que reflejan la naturaleza aleatoria de la lotería.',
+      technologies: ['Python', 'Scikit-learn', 'FastAPI', 'Docker', 'Pandas', 'PDFPlumber', 'Render'],
+      image_url: LoteriaML,
+      github_url: 'https://github.com/freddysanchez-dev', // Reemplaza con tu repo real
+      live_url: 'https://loteria-ml-cr.onrender.com/',
+    },
     {
       id: 1,
       title: 'Abarcasas - Puerto de Nueva Orleans',
